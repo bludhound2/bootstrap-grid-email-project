@@ -7,12 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/297a210249.js" crossorigin="anonymous"></script>
     <title>Bret Carlson - Inbox</title>
   </head>
       <body>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row vh-100">
                 <!-- First Column -->
                 <div class="gx-0 col-lg-3 border bg-primary text-light">
                     <!-- Hamburger Menu Code for phone/tablet -->
@@ -67,7 +68,7 @@
                         </div>
                     </div>
                     <!-- End Hamburger Menu Code -->
-                    Bret Carlson - Inbox
+                    <h5 class="d-inline-block mb-1 border-bottom border-2 border-color-light">Bret Carlson - Inbox</h5>
                     <ul class="nav d-none d-lg-block nav-pills flex-column mb-auto">
                         <li class="nav-item">
                             <button href="#" class="btn bg-secondary text-light">
@@ -106,6 +107,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Second Column (Search and email list) -->
                 <div class="gx-0 col-sm-4 col-lg-3 border">
                     <form class="d-flex input-group w-auto">
                         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
@@ -113,9 +115,61 @@
                             <i class="fas fa-search"></i>
                         </span>
                     </form>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Blah McBlahface</h5>
+                            <small>5:24pm</small>
+                          </div>
+                          <p class="mb-1">Test Email for new email application.</p>
+                          <small class="d-inline-block text-truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus expedita maiores officia qui suscipit culpa consequuntur itaque voluptates ex</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Nigerian Prince</h5>
+                            <small class="text-muted">3:46pm</small>
+                          </div>
+                          <p class="mb-1">I want to give you $10 million!</p>
+                          <small class="text-muted d-inline-block text-truncate">Hello, I'm writing to inform you that you have been selected to hold a large portion of my finances.  I will pay you .</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Google Classroom</h5>
+                            <small class="text-muted">8:00am</small>
+                          </div>
+                          <p class="mb-1">Assignment is due on Monday.</p>
+                          <small class="text-muted d-inline-block text-truncate">Hello Bret, Your bootstrap grid email project is due on Monday.  Make sure to include your github repository</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">LinkedIn</h5>
+                              <small class="text-muted">Yesterday</small>
+                            </div>
+                            <p class="mb-1">You have 10 new notifications.</p>
+                            <small class="text-muted d-inline-block text-truncate">Sign in now to check out the 10 notifications waiting for you.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Bay Valley Tech Code Academy</h5>
+                              <small class="text-muted">2 months ago</small>
+                            </div>
+                            <p class="mb-1">You've been accepted into Cohort 229.</p>
+                            <small class="text-muted d-inline-block text-truncate">Congratulations Again on being accepted into Bay Valley Tech's Free 7-Month Web Developement Course!</small>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-sm-8 col-lg-6 border">
-                    Column
+                <!-- Third Column (email details) -->
+                <div class="col-sm-8 col-lg-6 border-top border-3 border-color-dark">
+                    <div class="d-flex w-100 justify-content-between mt-1">
+                        <h5 class="mb-1">From: Blah McBlahface</h5>
+                        <small>5:24pm</small>
+                    </div>
+                    <h5 class="mb-1">To: Bret Carlson</h5>
+                    <p class="mb-1 border-bottom border-1 border-color-dark">Subject: Test Email for new email application.</p>
+                    <div class="w-100 mt-2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatum delectus vitae. Voluptas tempora, iste quas, maxime exercitationem voluptates eligendi iusto rerum facilis incidunt neque cumque quaerat enim recusandae ducimus perferendis qui a minima beatae ea ratione illum cum? Eaque, numquam! Soluta esse laudantium debitis repellendus expedita temporibus maiores non.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eos voluptates enim, fugit reprehenderit, cum ad perferendis architecto eius sunt, neque culpa labore! Tempora commodi modi officiis soluta sapiente aspernatur quos sit maxime ab earum! Fugit molestiae optio similique excepturi?</p>
+                    </div>
                 </div>
             </div>
         </div>
