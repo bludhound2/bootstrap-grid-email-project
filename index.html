@@ -13,9 +13,9 @@
   </head>
       <body>
         <div class="container-fluid">
-            <div class="row vh-100">
+            <div class="row">
                 <!-- First Column -->
-                <div class="gx-0 col-lg-3 border bg-primary text-light">
+                <div class="gx-0 col-lg-3 border bg-primary d-lg-flex flex-column justify-content-around align-items-center text-light">
                     <!-- Hamburger Menu Code for phone/tablet -->
                     <a class="btn btn-primary d-lg-none" data-bs-toggle="offcanvas" href="#offcanvas-menu" role="button" aria-controls="offcanvas-menu">
                         <i class="ms-1 fa-solid fa-bars"></i>
@@ -68,10 +68,10 @@
                         </div>
                     </div>
                     <!-- End Hamburger Menu Code -->
-                    <h5 class="d-inline-block mb-1 border-bottom border-2 border-color-light">Bret Carlson - Inbox</h5>
+                    <h5 class="d-inline-block mb-1 mb-lg-3 border-bottom border-2 border-color-light">Bret Carlson - Inbox</h5>
                     <ul class="nav d-none d-lg-block nav-pills flex-column mb-auto justify-content-center">
                         <li class="nav-item">
-                            <button href="#" class="btn bg-secondary text-light">
+                            <button href="#" class="btn rounded-pill bg-secondary text-light">
                                 New Email
                             </button>
                         </li>
@@ -109,14 +109,16 @@
                 </div>
                 <!-- Second Column (Search and email list) -->
                 <div class="gx-0 col-sm-4 col-lg-3 border">
+                    <!-- Search Bar -->
                     <form class="d-flex input-group w-auto">
                         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
                         <span class="input-group-text text-white border-1" id="search-addon">
                             <i class="fas fa-search"></i>
                         </span>
                     </form>
+                    <!-- Email List -->
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                        <a href="#" class="list-group-item list-group-item-action active shadow-sm" aria-current="true">
                           <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Blah McBlahface</h5>
                             <small>5:24pm</small>
@@ -170,9 +172,10 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatum delectus vitae. Voluptas tempora, iste quas, maxime exercitationem voluptates eligendi iusto rerum facilis incidunt neque cumque quaerat enim recusandae ducimus perferendis qui a minima beatae ea ratione illum cum? Eaque, numquam! Soluta esse laudantium debitis repellendus expedita temporibus maiores non.</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eos voluptates enim, fugit reprehenderit, cum ad perferendis architecto eius sunt, neque culpa labore! Tempora commodi modi officiis soluta sapiente aspernatur quos sit maxime ab earum! Fugit molestiae optio similique excepturi?</p>
                     </div>
-                    <div>
-                        <textarea name="" class="w-100" cols="30" rows="10" placeholder="Reply"></textarea>
-                        <button class="">Reply</button>
+                    <!-- textarea -->
+                    <div class="m-3">
+                        <textarea class="w-100 form-control input-group" cols="30" rows="10" placeholder="Type here to reply..."></textarea>
+                        <button class="input-group rounded-pill">Reply</button>
                     </div>
                 </div>
             </div>
