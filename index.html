@@ -13,7 +13,7 @@
   </head>
       <body>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row my-row">
                 <!-- First Column -->
                 <div class="gx-0 col-lg-3 border bg-primary d-lg-flex flex-column justify-content-around align-items-center text-light">
                     <!-- Hamburger Menu Code for phone/tablet -->
@@ -71,7 +71,7 @@
                     <h5 class="d-inline-block mb-1 mb-lg-3 border-bottom border-2 border-color-light">Bret Carlson - Inbox</h5>
                     <ul class="nav d-none d-lg-block nav-pills flex-column mb-auto justify-content-center">
                         <li class="nav-item">
-                            <button href="#" class="btn rounded-pill bg-secondary text-light">
+                            <button href="#" class="btn my-btn text-light">
                                 New Email
                             </button>
                         </li>
@@ -120,7 +120,7 @@
                     <div class="list-group">
                         <a href="#" class="list-group-item list-group-item-action active shadow-sm" aria-current="true">
                           <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Blah McBlahface</h5>
+                            <h5 class="mb-1 text-truncate">Blah McBlahface</h5>
                             <small>5:24pm</small>
                           </div>
                           <p class="mb-1">Test Email for new email application.</p>
@@ -172,10 +172,31 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatum delectus vitae. Voluptas tempora, iste quas, maxime exercitationem voluptates eligendi iusto rerum facilis incidunt neque cumque quaerat enim recusandae ducimus perferendis qui a minima beatae ea ratione illum cum? Eaque, numquam! Soluta esse laudantium debitis repellendus expedita temporibus maiores non.</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eos voluptates enim, fugit reprehenderit, cum ad perferendis architecto eius sunt, neque culpa labore! Tempora commodi modi officiis soluta sapiente aspernatur quos sit maxime ab earum! Fugit molestiae optio similique excepturi?</p>
                     </div>
+                    <div class="btn-toolbar d-flex justify-content-between">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary shadow-sm">
+                                <i class="fa-solid fa-reply"></i><br>Reply
+                            </button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary shadow-sm">
+                                <i class="fa-solid fa-reply-all"></i><br>Reply All
+                            </button> 
+                            <button type="button" class="btn btn-sm btn-outline-secondary shadow-sm">
+                                <i class="fa-solid fa-forward"></i><br>Forward 
+                            </button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary shadow-sm">
+                                <i class="fa-solid fa-paperclip"></i><br>Attach
+                            </button>  
+                            <button type="button" class="btn btn-sm btn-outline-secondary shadow-sm">
+                                <i class="fa-solid fa-trash"></i><br>Delete
+                            </button>
+                        </div>
+                    </div>
                     <!-- textarea -->
                     <div class="m-3">
                         <textarea class="w-100 form-control input-group" cols="30" rows="10" placeholder="Type here to reply..."></textarea>
-                        <button class="input-group rounded-pill">Reply</button>
+                        <button class="rounded-pill">Reply</button>
                     </div>
                 </div>
             </div>
